@@ -1,0 +1,69 @@
+<html>
+<body>
+	<h1>setTimeOut</h1>
+	<p id="counter"></p>
+	
+	<script type="text/javascript">
+
+	function sampleZero() {
+		// Uses the same "i" for all calls (the "i" in context - aka closure)
+  	for (var i = 1; i <= 3; i++) {
+   	  setTimeout(function() { 
+  			document.getElementById("counter").innerHTML += i + ", "; 	  	
+   	  }, 1000);
+   	}
+	}
+		
+	function sampleOne() {
+		// Uses the same "i" for all calls (the "i" in context - aka closure)
+		//
+		// Shows that they are executed immediately after each other
+		// (the wait was 1 second from the time they were queued, 
+		// but since they take no time to execute the next one is
+		// executed immediately after)
+  	for (var i = 1; i <= 3; i++) {
+   	  setTimeout(function() {
+  			var now = new Date();
+  			var text = "i=" + i + " at " + now.getSeconds() + ":" + now.getMilliseconds() + ", ";
+  			document.getElementById("counter").innerHTML += text; 	  	
+   	  }, 1000);
+   	}
+	}
+
+	function sampleTwo() {
+		// Passes individual values for i. Notice the individual 
+		// calls "(j)" in which j becomes i as a parameter
+		// (we are creating a new context for each call)
+		for (var j = 1; j <= 3; j++) {
+	 	  (function(i) {
+				setTimeout(function() {
+					document.getElementById("counter").innerHTML += i + ", "; 	
+	 	  	}, 1000);
+			})(j);
+	 	}
+	}
+
+	function sampleThree() {		
+		
+		// Extracting the callback/delegate outside the loop
+		//
+		// Still passes individual values for i. Notice the individual 
+		// calls "(j)" in which j becomes i as a parameter
+		// (we are creating a new context for each call)
+				
+		var theFunc = function(i) {
+			document.getElementById("counter").innerHTML += i + ", ";  	
+	 	};
+		
+		for (var j = 1; j <= 3; j++) {
+	 	  (function(i) {
+				setTimeout(theFunc, 1000, i);
+			})(j);
+	 	}
+	}
+
+	sampleThree();
+	</script>
+
+</body>
+</html>

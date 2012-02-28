@@ -1,0 +1,38 @@
+<html>
+<!--
+This example shows the concept of closure: a function
+has access to the context in which it was created.
+
+In this case, even though the "fade" function finished
+after being called once, the "step" function (which
+was created inside "fade") has access to fade's variables
+long after fade has finished executing!
+
+Taken from "JavaScript: The Good Parts"
+by Douglas Crockford p. 38
+-->
+<body>
+	
+<h1>Fade Color Example</h1>
+<p>Count: <span id="counter"/></p>
+
+<script type="text/javascript">
+var fade = function(node, node2) {
+	var level = 1;
+	var step = function () {
+		var hex = level.toString(16);
+		node.style.backgroundColor = 'FFFF' + hex + hex;
+		node2.innerText = level.toString();
+		if(level < 15) {
+			level += 1;
+			setTimeout(step, 300);
+		}		
+	};
+	setTimeout(step,300);
+};
+
+fade(document.body, document.getElementById("counter"));
+</script>
+
+</body>
+</html>
