@@ -1,5 +1,5 @@
 (function() {
-  var billTo, label;
+  var billTo, label, shipTo;
 
   billTo = {};
 
@@ -7,7 +7,13 @@
 
   billTo.city = "State College";
 
-  label = typeof shipTo !== "undefined" && shipTo !== null ? shipTo : billTo;
+  shipTo = {};
+
+  shipTo.street = "222 Warehouse Blvd.";
+
+  shipTo.city = "Bellefonte";
+
+  label = shipTo != null ? shipTo : billTo;
 
   console.log("" + label.street);
 

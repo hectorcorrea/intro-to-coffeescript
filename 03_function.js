@@ -5,7 +5,7 @@
     return x * x;
   };
 
-  n = 3;
+  n = 9;
 
   s = square(n);
 
