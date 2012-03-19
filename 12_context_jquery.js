@@ -4,22 +4,16 @@
 
   MyObject = (function() {
 
-    MyObject.myTitle = "my object";
-
     function MyObject() {
-      this.boundHandler = __bind(this.boundHandler, this);      $(window).resize(this.handler);
+      this.handler = __bind(this.handler, this);      this.count = 0;
+      this.myTitle = "MyObject";
+      $(window).resize(this.handler);
     }
 
     MyObject.prototype.handler = function(event) {
       var newHtml;
-      newHtml = "" + this.myTitle;
-      $("#placeHolder").html(newHtml);
-      return false;
-    };
-
-    MyObject.prototype.boundHandler = function(event) {
-      var newHtml;
-      newHtml = "" + this.myTitle;
+      this.count++;
+      newHtml = "" + this.myTitle + " " + this.count;
       $("#placeHolder").html(newHtml);
       return false;
     };
@@ -30,7 +24,7 @@
 
   $(function() {
     window.myObject = new MyObject();
-    window.myTitle = "The Global Object";
+    window.myTitle = "Global Object";
   });
 
 }).call(this);

@@ -1,6 +1,3 @@
-# TODO: This example is not functional yet
-
-###
 $ ->
 
 	getServerData = ->
@@ -24,4 +21,3 @@ $ ->
 
 	console.log "...document ready ended."
 	return
-###

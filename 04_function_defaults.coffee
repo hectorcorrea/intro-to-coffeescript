@@ -4,5 +4,5 @@ totalPrice = (price, discountPercent = 0, taxPercent = 10) ->
 	price - discount + tax
 
 itemPrice = 100
-total = totalPrice(itemPrice, 50, 7)
+total = totalPrice(itemPrice, 50)
 console.log "total price = #{total}"
