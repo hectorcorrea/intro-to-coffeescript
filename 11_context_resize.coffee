@@ -11,9 +11,9 @@ class MyObject
     @myTitle = "MyObject"
     $(window).resize @handler
 
-  handler: (event) =>
-    @count++
-    newHtml = "#{@myTitle} #{@count}"
+  handler: (event) ->
+    this.count++
+    newHtml = "#{this.myTitle} #{this.count}"
     $("#placeHolder").html(newHtml)
     false
 
@@ -21,12 +21,3 @@ $ ->
   window.myObject = new MyObject()
   window.myTitle = "Global Object"
   return
-
-
-
-
-
-
-
-
-

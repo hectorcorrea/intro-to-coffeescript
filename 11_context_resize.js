@@ -1,11 +1,10 @@
 (function() {
-  var MyObject,
-    __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+  var MyObject;
 
   MyObject = (function() {
 
     function MyObject() {
-      this.handler = __bind(this.handler, this);      this.count = 0;
+      this.count = 0;
       this.myTitle = "MyObject";
       $(window).resize(this.handler);
     }

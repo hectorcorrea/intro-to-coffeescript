@@ -13,7 +13,7 @@
     return $('#btnTest3').click(function() {
       var url,
         _this = this;
-      url = "file:///Users/hector/dev/coffee/intro-to-coffeescript/11_context.txt";
+      url = "file:///Users/hector/dev/coffee/intro-to-coffeescript/10_context.txt";
       return $.get(url, function(data) {
         return alert(_this.value);
       });
