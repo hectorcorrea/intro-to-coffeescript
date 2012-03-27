@@ -6,18 +6,19 @@
 #
 class MyObject
 
-  constructor: (window) ->
+  constructor: ->
+    
     @count = 0
     @myTitle = "MyObject"
-    $(window).resize @resizeIt
 
-  resizeIt: (event) =>
-    this.count++
-    newHtml = "#{this.myTitle} #{this.count}"
-    $("#placeHolder").html(newHtml)
-    false
+    $('#btnGetData').click -> 
+      url = "file:///Users/hector/dev/coffee/intro-to-coffeescript/10_context.txt"
+      $.get url, (data) ->
+        this.count++
+        $('#btnGetData').val "#{data} / #{this.count}"
+        false
 
 $ ->
-  window.myObject = new MyObject(window)
+  window.myObject = new MyObject()
   window.myTitle = "Global Object"
   return
