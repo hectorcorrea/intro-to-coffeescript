@@ -11,11 +11,10 @@
       }, 300);
     });
     return $('#btnTest3').click(function() {
-      var url,
-        _this = this;
+      var url;
       url = "file:///Users/hector/dev/coffee/intro-to-coffeescript/10_context.txt";
       return $.get(url, function(data) {
-        return alert(_this.value);
+        return alert(this.value);
       });
     });
   });
