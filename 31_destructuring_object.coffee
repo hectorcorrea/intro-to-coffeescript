@@ -10,5 +10,8 @@ fetchCustomer = (id) ->
 		email: "wile@acme.com"
 	customer
 
-{attention, email} = fetchCustomer(1)
-console.log "#{attention} #{email}"
+# {attention, email} = fetchCustomer(1)
+# console.log "#{attention} #{email}"
+
+{a, address} = fetchCustomer(1)
+console.log "#{a} #{address}"

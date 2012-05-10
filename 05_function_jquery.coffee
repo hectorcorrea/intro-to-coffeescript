@@ -16,4 +16,3 @@ $ ->
 	$("#txtPrice").change updateTotalPrice
 	$("#txtDiscount").change updateTotalPrice
 	$("#txtTax").change updateTotalPrice
-	return

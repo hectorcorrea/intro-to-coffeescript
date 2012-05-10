@@ -5,8 +5,8 @@ class TaxCalculator
 
 	taxAmount: (price) -> price * (@tax/100)
 
-	totalPrice: (price) -> price + (price * (@tax/100))
-	#totalPrice: (price) -> price + @taxAmount(price)
+	#totalPrice: (price) -> price + (price * (@tax/100))
+	totalPrice: (price) -> price + @taxAmount(price)
 
 
 calc = new TaxCalculator()
