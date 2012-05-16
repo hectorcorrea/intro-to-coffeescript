@@ -1,11 +1,9 @@
 class TaxCalculator
 
-	constructor: (tax = 10) ->
-		this.tax = tax
+	constructor: (@tax = 10) ->
 
 	taxAmount: (price) -> price * (@tax/100)
 
-	#totalPrice: (price) -> price + (price * (@tax/100))
 	totalPrice: (price) -> price + @taxAmount(price)
 
 

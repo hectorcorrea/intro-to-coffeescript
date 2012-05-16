@@ -20,8 +20,8 @@
 
   console.log("\r\nSample 3 (comprehension) ------------");
 
-  toUpper = function(v) {
-    return v.toUpperCase();
+  toUpper = function(value) {
+    return value.toUpperCase();
   };
 
   upper = (function() {

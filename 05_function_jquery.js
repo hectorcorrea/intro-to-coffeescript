@@ -31,7 +31,7 @@
   $(function() {
     $("#txtPrice").change(updateTotalPrice);
     $("#txtDiscount").change(updateTotalPrice);
-    $("#txtTax").change(updateTotalPrice);
+    return $("#txtTax").change(updateTotalPrice);
   });
 
 }).call(this);

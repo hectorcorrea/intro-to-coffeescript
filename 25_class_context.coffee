@@ -10,5 +10,5 @@ class InvoiceForm
 
 $ ->
 	invoice = new InvoiceForm("Acme Corporation")
-	#invoice.calculateTotal()	
-	$('#btnCalculate').click invoice.calculateTotal 
+	invoice.calculateTotal()	
+	#$('#btnCalculate').click invoice.calculateTotal 

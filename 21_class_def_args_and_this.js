@@ -18,7 +18,7 @@
     };
 
     TaxCalculator.prototype.totalPrice = function(price) {
-      return price + (price * (this.tax / 100));
+      return price + this.taxAmount(price);
     };
 
     return TaxCalculator;

@@ -13,7 +13,7 @@ class MeanTaxCalculator extends TaxCalculator
 
 	anotherMethod: -> "hello"
 
-calc = new MeanTaxCalculator(10)
+calc = new MeanTaxCalculator()
 total = calc.totalPrice(500)
 
 console.log calc.anotherMethod()
