@@ -1,0 +1,25 @@
+Restore git branch to last commit
+git reset --hard
+
+Recompile all files
+coffee -c *.coffee
+
+In OS X: 
+	alt+command+8 to toggle zoom window on/off
+
+In OS X/Sublime: 
+	super+b run to console
+	super+j compile to JS
+	super+m compile to console
+
+
+TODO: 
+
+	Include example showing using more than ONE file (you must export
+	values/classes/functions for them to be public)
+
+	Include for/of example
+
+	Better demo for comprehensions
+
+
