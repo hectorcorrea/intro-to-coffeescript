@@ -25,3 +25,9 @@ upper = (toUpper(c) for c in colors)
 console.log upper
 
 
+
+
+
+
+
+

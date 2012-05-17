@@ -11,4 +11,10 @@ class InvoiceForm
 $ ->
 	invoice = new InvoiceForm("Acme Corporation")
 	invoice.calculateTotal()	
-	#$('#btnCalculate').click invoice.calculateTotal 
+	
+	$('#btnCalculate').click invoice.calculateTotal 
+
+
+# If you look at the JavaScript code generated, the 
+# code to make sure "this" is what you expect is 
+# more complicated than a simple _this. 
