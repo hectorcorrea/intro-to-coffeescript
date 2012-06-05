@@ -6,10 +6,11 @@
       return alert(this.value);
     });
     $('#btnTest2').click(function() {
-      var url;
+      var url,
+        _this = this;
       url = "file:///Users/hector/dev/coffee/intro-to-coffeescript/10_context.txt";
       return $.get(url, function(data) {
-        return alert(this.value);
+        return alert(_this.value);
       });
     });
   });

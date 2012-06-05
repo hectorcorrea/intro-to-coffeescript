@@ -6,12 +6,12 @@ shipTo = {}
 shipTo.street = "222 Warehouse Bldv."
 shipTo.city = "Bellefonte"
 shipTo.attn = 
-	name: "John Doe"
-	title: "Mr."
+  name: "John Doe"
+  title: "Mr."
 
-city = shipTo?.city ? billTo.city
-console.log "City: #{city}"
+# city = shipTo?.city ? billTo.city
+# console.log "City: #{city}"
 
-# attn = shipTo?.attn?.name ? "N/A"
-# console.log "Attn: #{attn}"
+attn = shipTo?.attn?.name ? "N/A"
+console.log "Attn: #{attn}"
 

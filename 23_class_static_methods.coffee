@@ -1,13 +1,13 @@
 class TaxCalculator
 
-	constructor: (@tax = 10) ->
+  constructor: (@tax = 10) ->
 
-	taxAmount: (price) -> price * (@tax/100)
+  taxAmount: (price) -> price * (@tax/100)
 
-	totalPrice: (price) -> price + @taxAmount(price)
+  totalPrice: (price) -> price + @taxAmount(price)
 
-	@isTaxableState: (state) ->
-  	state in ['PA', 'MO', 'NY']
+  @isTaxableState: (state) ->
+    state in ['PA', 'MO', 'NY']
 
 state = 'NY'
 isTaxable = TaxCalculator.isTaxableState(state)

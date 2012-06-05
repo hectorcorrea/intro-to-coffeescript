@@ -1,4 +1,4 @@
-square = (x) ->  
+square = (x) ->
   x * x
 
 n = 9

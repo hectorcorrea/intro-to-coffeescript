@@ -1,10 +1,10 @@
 class TaxCalculator
 
-	constructor: (@tax = 10) ->
+  constructor: (@tax = 10) ->
 
-	taxAmount: (price) -> price * (@tax/100)
+  taxAmount: (price) -> price * (@tax/100)
 
-	totalPrice: (price) -> price + @taxAmount(price)
+  totalPrice: (price) -> price + @taxAmount(price)
 
 
 calc = new TaxCalculator(30)

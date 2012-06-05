@@ -10,16 +10,16 @@ colors = ['red', 'blue', 'white']
 
 console.log "Sample 1 (loop) ------------"
 for color in colors
-	console.log color
+  console.log color
 
 
 console.log "\r\nSample 2 (loop with i) ------------"
 for color, i in colors
-	console.log i, color
+  console.log i, color
 
 
 console.log "\r\nSample 3 (comprehension) ------------"
-# toUpper = (value) -> value.toUpperCase()
+#toUpper = (value) -> value.toUpperCase()
 
 upper = (c.toUpperCase() for c in colors)
 console.log upper

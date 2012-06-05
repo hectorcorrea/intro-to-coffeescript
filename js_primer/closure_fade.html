@@ -12,23 +12,23 @@ Taken from "JavaScript: The Good Parts"
 by Douglas Crockford p. 38
 -->
 <body>
-	
+  
 <h1>Fade Color Example</h1>
 <p>Count: <span id="counter"/></p>
 
 <script type="text/javascript">
 var fade = function(node, node2) {
-	var level = 1;
-	var step = function () {
-		var hex = level.toString(16);
-		node.style.backgroundColor = 'FFFF' + hex + hex;
-		node2.innerText = level.toString();
-		if(level < 15) {
-			level += 1;
-			setTimeout(step, 300);
-		}		
-	};
-	setTimeout(step,300);
+  var level = 1;
+  var step = function () {
+    var hex = level.toString(16);
+    node.style.backgroundColor = 'FFFF' + hex + hex;
+    node2.innerText = level.toString();
+    if(level < 15) {
+      level += 1;
+      setTimeout(step, 300);
+    }   
+  };
+  setTimeout(step,300);
 };
 
 fade(document.body, document.getElementById("counter"));

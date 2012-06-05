@@ -1,12 +1,12 @@
 class TaxCalculator
-	tax = 0
+  tax = 0
 
-	constructor: (tax) ->
-		this.tax = tax
+  constructor: (tax) ->
+    this.tax = tax
 
-	taxAmount: (price) -> price * (this.tax/100)
+  taxAmount: (price) -> price * (this.tax/100)
 
-	totalPrice: (price) -> price + (price * (this.tax/100))
+  totalPrice: (price) -> price + (price * (this.tax/100))
 
 
 calc = new TaxCalculator(20)

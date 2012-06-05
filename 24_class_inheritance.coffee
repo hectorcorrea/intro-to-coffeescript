@@ -1,17 +1,17 @@
 class TaxCalculator
 
-	constructor: (@tax = 10) ->
+  constructor: (@tax = 10) ->
 
-	taxAmount: (price) -> price * (@tax/100)
+  taxAmount: (price) -> price * (@tax/100)
 
-	totalPrice: (price) -> price + @taxAmount(price)
+  totalPrice: (price) -> price + @taxAmount(price)
 
 
 class MeanTaxCalculator extends TaxCalculator
 
-	totalPrice: (price) -> price + @taxAmount(price) + 25
+  totalPrice: (price) -> price + @taxAmount(price) + 25
 
-	anotherMethod: -> "hello"
+  anotherMethod: -> "hello"
 
 calc = new MeanTaxCalculator()
 total = calc.totalPrice(500)
