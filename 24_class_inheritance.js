@@ -46,7 +46,7 @@
 
   })(TaxCalculator);
 
-  calc = new MeanTaxCalculator(10);
+  calc = new MeanTaxCalculator();
 
   total = calc.totalPrice(500);
 

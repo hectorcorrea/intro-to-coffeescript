@@ -1,6 +1,5 @@
 square = (x) ->  
-	x * x
-
+  x * x
 
 n = 9
 s = square(n)

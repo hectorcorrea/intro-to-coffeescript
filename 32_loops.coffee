@@ -19,9 +19,9 @@ for color, i in colors
 
 
 console.log "\r\nSample 3 (comprehension) ------------"
-toUpper = (value) -> value.toUpperCase()
+# toUpper = (value) -> value.toUpperCase()
 
-upper = (toUpper(c) for c in colors)
+upper = (c.toUpperCase() for c in colors)
 console.log upper
 
 

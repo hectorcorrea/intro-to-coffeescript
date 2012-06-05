@@ -5,7 +5,7 @@
     $('#btnTest1').click(function() {
       return alert(this.value);
     });
-    return $('#btnTest2').click(function() {
+    $('#btnTest2').click(function() {
       var url,
         _this = this;
       url = "file:///Users/hector/dev/coffee/intro-to-coffeescript/10_context.txt";

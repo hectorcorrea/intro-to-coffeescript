@@ -7,10 +7,7 @@
     TaxCalculator.name = 'TaxCalculator';
 
     function TaxCalculator(tax) {
-      if (tax == null) {
-        tax = 10;
-      }
-      this.tax = tax;
+      this.tax = tax != null ? tax : 10;
     }
 
     TaxCalculator.prototype.taxAmount = function(price) {

@@ -12,6 +12,6 @@ shipTo.attn =
 city = shipTo?.city ? billTo.city
 console.log "City: #{city}"
 
-attn = shipTo?.attn?.name ? "N/A"
-console.log "Attn: #{attn}"
+# attn = shipTo?.attn?.name ? "N/A"
+# console.log "Attn: #{attn}"
 
