@@ -2,7 +2,7 @@
 (function() {
 
   $(document).ready(function() {
-    return $("body").html("Hello World...");
+    $("body").html("Hello World...");
   });
 
 }).call(this);

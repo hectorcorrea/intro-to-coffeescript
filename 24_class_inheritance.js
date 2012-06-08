@@ -50,8 +50,8 @@
 
   total = calc.totalPrice(500);
 
-  console.log(calc.anotherMethod());
-
   console.log("total $ " + total);
+
+  console.log(calc.anotherMethod());
 
 }).call(this);

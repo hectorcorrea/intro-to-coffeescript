@@ -26,7 +26,7 @@
 
   })();
 
-  state = 'NY';
+  state = 'PA';
 
   isTaxable = TaxCalculator.isTaxableState(state);
 

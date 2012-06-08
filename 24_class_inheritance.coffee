@@ -16,6 +16,6 @@ class MeanTaxCalculator extends TaxCalculator
 calc = new MeanTaxCalculator()
 total = calc.totalPrice(500)
 
-console.log calc.anotherMethod()
 console.log "total $ #{total}"
+console.log calc.anotherMethod()
 

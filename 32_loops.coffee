@@ -20,6 +20,7 @@ for color, i in colors
 
 console.log "\r\nSample 3 (comprehension) ------------"
 upper = (color.toUpperCase() for color in colors)
+console.log "# elements: #{upper.length}"
 console.log upper
 
 

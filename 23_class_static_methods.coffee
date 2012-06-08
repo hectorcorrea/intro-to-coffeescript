@@ -9,7 +9,7 @@ class TaxCalculator
   @isTaxableState: (state) ->
     state in ['PA', 'MO', 'NY']
 
-state = 'NY'
+state = 'PA'
 isTaxable = TaxCalculator.isTaxableState(state)
 console.log "state #{state} is taxable? #{isTaxable}"
 
