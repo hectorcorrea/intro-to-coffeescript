@@ -4,7 +4,7 @@ square = (x) ->
 n = 4
 s = square(n)
 
-console.log "square of #{n} is #{s}"
+console.log "square of #{n} is #{square(4)}"
 
 
 # word "function" removed

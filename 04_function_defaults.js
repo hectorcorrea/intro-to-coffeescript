@@ -15,7 +15,7 @@
     return price - discount + tax;
   };
 
-  total = totalPrice(100, 50);
+  total = totalPrice(100, 50, 20);
 
   console.log("total price = " + total);
 

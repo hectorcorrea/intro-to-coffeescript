@@ -22,7 +22,7 @@
 
   })();
 
-  calc = new TaxCalculator(10);
+  calc = new TaxCalculator(50);
 
   price = 100;
 

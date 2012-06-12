@@ -4,7 +4,7 @@ billTo.city = "Bill To City"
 
 shipTo = {}
 shipTo.street = "222 Warehouse Bldv."
-shipTo.city = "Ship To City"
+# shipTo.city = "Ship To City"
 shipTo.attn = 
   name: "John Doe"
   title: "Mr."

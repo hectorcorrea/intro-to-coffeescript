@@ -7,7 +7,7 @@ class TaxCalculator
   totalPrice: (price) -> price + @taxAmount(price)
 
 
-calc = new TaxCalculator(10)
+calc = new TaxCalculator(50)
 price = 100
 tax = calc.taxAmount(price)
 total = calc.totalPrice(price)

@@ -17,3 +17,12 @@ total = calc.totalPrice(price)
 console.log "price $#{price}"
 console.log "tax $ #{tax}"
 console.log "total $#{total}"
+
+
+
+
+
+
+
+
+

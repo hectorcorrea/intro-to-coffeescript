@@ -15,7 +15,3 @@ In OS X/Sublime:
 	super+j compile to JS
 	super+m compile to console
 
-
-TODO: 
-	Include example showing using more than ONE file (you must export
-	values/classes/functions for them to be public)
