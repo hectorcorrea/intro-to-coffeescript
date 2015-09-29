@@ -35,7 +35,7 @@ processRequest = (req, res) ->
     path.exists localPath, (exists) ->
       if exists
         console.log "Serving file: #{localPath}"
-        getFile localPath, res, ext
+        getFile localPath, res, isValidExt
       else
         console.log "File not found: #{localPath}"
         res.writeHead 404
